@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Segmentation des Fruits 🍌🍓</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #00ffff;
+    text-shadow: 2px 2px 10px rgba(0,255,255,0.5);
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .section {
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    padding: 25px 35px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    max-width: 700px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    animation: slideUp 1.5s ease-out;
+  }
+
+  .section h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #00ffff;
+    text-decoration: underline;
+  }
+
+  .section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .section ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  button {
+    background-color: #00ffff;
+    color: #0d1b2a;
+    font-size: 20px;
+    padding: 15px 45px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,255,255,0.5);
+    transition: all 0.3s ease;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+  }
+
+  button:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #00e0e0;
+    box-shadow: 0 8px 25px rgba(0,255,255,0.7);
+  }
+
+  footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #00ffff;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(-20px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+
+  @keyframes slideUp {
+    0% {opacity: 0; transform: translateY(50px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+</style>
+</head>
+<body>
+
+  <h1>Segmentation des Fruits </h1>
+
+  <div class="section">
+    <h2>À propos du projet</h2>
+    <p>
+      Ce projet a été réalisé dans un <strong>objectif éducatif</strong>.  
+      Il utilise un modèle d’IA entraîné pour la <strong>segmentation d’images de fruits</strong>.  
+      Le modèle détecte et segmente huit types de fruits : <strong>Banana, Grapes, Kiwi, Mangue, Orange, Pineapple, Pomme, Strawberry</strong>.  
+      L’objectif est de visualiser chaque fruit dans une image pour apprendre, expérimenter et comprendre le fonctionnement des modèles d’IA.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Résultats obtenus</h2>
+    <ul>
+      <li> <strong>mAP@50 :</strong> 92.7%</li>
+      <li> <strong>Precision :</strong> 88.1%</li>
+      <li> <strong>Recall :</strong> 86.0%</li>
+    </ul>
+  </div>
+
+  <button onclick="window.location.href='./static/segmentation.html'"> Tester l'application</button>
+
+  <footer>&copy; 2025 YOUNES ELBOUKNIFY - Projet réalisé dans un objectif éducatif</footer>
+
+</body>
+</html>
