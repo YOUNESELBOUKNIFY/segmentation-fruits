@@ -2,6 +2,10 @@
 
 Ce projet permet de **segmenter des fruits dans des images** en utilisant le modèle **YOLOv8 Segmentation**. Il contient un backend en Python pour l'inférence et une interface pour l'affichage des résultats.
 
+# Lien vers la vidéo de test
+video_url = "https://drive.google.com/file/d/1RItauNNG0B6zXH63jou5czIno2tQ9-Qv/view?usp=sharing"
+
+
 ---
 
 ## Configuration du modèle – Roboflow
