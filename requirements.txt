@@ -4,4 +4,4 @@ Pillow
 Requests
 numpy
 opencv-python
-
+python-multipart
